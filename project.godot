@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="JungleJump"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -57,7 +57,7 @@ down={
 2d_physics/layer_1="environment"
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemies"
-2d_physics/layer_4="items"
+2d_physics/layer_4="items/collectables"
 
 [rendering]
 
