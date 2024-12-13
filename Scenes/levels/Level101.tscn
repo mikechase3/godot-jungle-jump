@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bj67tvmcogtir"]
+
+[ext_resource type="PackedScene" uid="uid://c2d2ew8kymhgu" path="res://scenes/levels/LevelBase.tscn" id="1_0kry3"]
+
+[node name="LevelBase" instance=ExtResource("1_0kry3")]
+
+[node name="TML_Items" parent="TileMaps" index="1"]
+tile_map_data = PackedByteArray(0, 0, 3, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 252, 255, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 244, 255, 7, 0, 1, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="Player" parent="." index="1"]
+position = Vector2(-148, 112)
+
+[node name="SpawnPoint" parent="." index="2"]
+position = Vector2(-270, 95)

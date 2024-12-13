@@ -24,6 +24,11 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_item_body_entered(body: Node2D) -> void:
+	print("PICKUP ", body.name)  # What is body colliding with?
 	picked_up.emit()  # Tells other parts that item has been collected.
 	queue_free()  # Removes this item from the scene.
+
+func init( item_type: String, _position: Vector2) -> void:
+	$Sprite2D.texture = load(textures[item_type]) as Texture
+	position = _position
