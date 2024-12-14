@@ -2,8 +2,7 @@
 This is an evolving document. See the latest version [here](https://github.com/24F-CPS499-GameDesign-JungleJump/chasem3).
 
 ## Game Overview
-TODO: Picture Here
-
+![img.png](FredTheFox.png)
 
 *Jungle smash* is an arcade-style platform endless-runner developed using the Godot engine.
 Players navigate Frank the Fox through a jungle filled with enemies, avoiding their
@@ -11,7 +10,7 @@ attacks, and striving to collect the most cherries by defeating obstacles and co
 power ups.
 
 * **Title**: Jungle Smash
-* **Genre**: Endless Runner Arcade Game
+* **Genre**: Platformer Arcade Game
 * **Target Audience**: intended for players particularly fond of endless runners and simple,
 platformer experiences.
 * **Platform**: For use on desktop platforms (Linux, macOS, Windows) and Web (HTML5).
@@ -68,7 +67,7 @@ change direction when hitting an obstacle.
 
 The release version will contain more complex platformer enemies through an
 expanded enemy roster. Serpents will slither along the ground. Bears will block
-pathways. Monkeys can jump from platform toi platform. Panthers will charge
+pathways. Monkeys can jump from platform to platform. Panthers will charge
 at the player when in range. Tropical birds will fly across the screen creating
 an airborne hazard. Poisonous frogs and snakes will leave harmful poisonous
 puddles after hopping away.
@@ -94,6 +93,7 @@ where dangerous animals and environmental challenges stand between him and his u
 (In a sequel, he shall face the humans)
 
 ### Characters
+Each characer type can be identified by their sound effect and corresponding visual cue. 
 
 | Character            | Abilities                      | Sound Effect         | Visual Cue                        |
 |----------------------|--------------------------------|----------------------|-----------------------------------|
@@ -107,7 +107,7 @@ where dangerous animals and environmental challenges stand between him and his u
 
 ### Setting
 - **Jungle Environment**: The game takes place in a dense, vibrant jungle filled with towering trees, winding caves, and dangerous wildlife.  
-- **Dynamic Time of Day**: In the release version, the game's visual color palette will sync with the player's local clock, providing a unique look depending on the time (e.g., sunrise, midday, sunset, night).  
+- **Dynamic Time of Day**: In the release version, the game's visual color palette will sync with the player's local clock, providing a unique look depending on the time (i.e. sunrise, midday, sunset, night).  
 - **Prototype Version**: The jungle is always set during daylight hours.  
 
 ### Backstory and Lore
@@ -126,40 +126,40 @@ This game tells the beginning of his epic struggle to escape the endless jungle,
 setting the stage for his larger battle against humanity in future chapters.
 
 ## Art and Aesthetics
-TODO: revise chat-gpt aided content:
 
 ### Visual Style
-The game embraces an **8-bit pixel art aesthetic**, reminiscent of classic Sega Genesis titles like *Sonic the Hedgehog*. The visuals are vibrant, colorful, and evoke a retro arcade feel while maintaining a modern, polished presentation. Each sprite and animation is designed to enhance the fast-paced gameplay and give the world a dynamic, lively vibe.
+The game embraces an **8-bit pixel art aesthetic**, similar to classic Sega Genesis titles like *Sonic the Hedgehog*. 
+The visuals are vibrant, colorful, and evoke a retro arcade feel.
+Each sprite and animation is designed to enhance the fast-paced gameplay and give the world a lively vibe.
 
----
 
 ### Character Design
 - **Frank the Fox**:  
-  Frank is the epitome of "cool." He’s a confident, intelligent fox with animations that showcase his personality:  
-  - **Idle Animation**: Taps his foot while deep in thought, conveying his sharp intellect.  
-  - **Run Animation**: Smooth and agile, showing off his quick reflexes and determination.  
-  - **Jump/Glide**: Frank glides gracefully and dashes in mid-air, highlighting his adventurous spirit.  
-  - **Victory Pose**: When completing a level, Frank triumphantly smirks, tail flicking in satisfaction.  
+  Frank is the cool fox. He’s a confident, intelligent fox with animations that showcase his personality:  
+  - **Idle Animation**: Taps his foot while waiting impatiently on the user, conveying his intellect and drive.
+  - **Run Animation**: Smooth and agile, showing off his quick reflexes and determination.
+  - **Jump/Glide**: Frank glides  and dashes in mid-air, highlighting his adventurous spirit.
+  - **Victory Pose**: When completing a level, Frank triumphantly smirks & his tail flickers in satisfaction.
 
 - **Enemies**:  
-  Each enemy is designed to contrast with Frank, being less refined and more animalistic in behavior:  
-  - **Serpent**: Sinister and slinky, with jagged slithering animations.  
-  - **Bear**: Large and lumbering, with exaggerated stomps and growls.  
-  - **Monkey**: Hyperactive and mischievous, constantly jumping and swinging.  
-  - **Panther**: Sleek and menacing, moving with low, predatory crouches.  
-  - **Tropical Bird**: Fluttery and erratic, with rapid wing flaps.  
-  - **Poison Dart Frog**: Brightly colored and bouncy, leaving trails of poison.  
+  Each enemy in the release version is designed to contrast with Frank being way more simplistic and more animalistic in behavior:  
+  - **Serpent**: Sinister and slinky, with jagged slithering animations.
+  - **Bear**: Large, with exaggerated stomps and growls.
+  - **Monkey**: Hyperactive, constantly jumping and swinging.
+  - **Panther**: Sleek, yet, menacing. They'll move with low, predatory crouches.
+  - **Tropical Bird**: Airborne & erratic, with rapid wing flaps.
+  - **Poison Dart Frog**: Brightly colored and bouncy, leaving trails of poison.
 
-Each enemy design incorporates distinct, exaggerated animations and vibrant colors to help players identify them quickly and react accordingly.
+Each enemy design incorporates distinct & exaggerated animations with vibrant colors to help players identify them quickly and react accordingly.
 
 
 ### Environment Design
 The jungle environment is lush, chaotic, and inspired by the dynamic world-building of *Sonic the Hedgehog*.  
-- **Color Palette**:  
+- **Color Palette**:
   - Bright greens for foliage, earthy browns for caves, and deep blues for water create a rich and vibrant world.  
   - **Time-Based Lighting**: In the release version, the environment colors will change dynamically based on the player's local time, depicting sunrise, daylight, sunset, and nighttime.  
 
-- **Prototype Design**:  
+- **Prototype Design**:
   - The environment is static and always set in daylight for simplicity.  
 
 The world is filled with interactive elements like tree branches, underground tunnels, and cliffs, emphasizing vertical and horizontal exploration.
@@ -167,15 +167,12 @@ The world is filled with interactive elements like tree branches, underground tu
 
 ### User Interface
 The UI is minimalist, designed to keep the player’s focus on the action while providing essential information.  
-- **HUD**:  
   - **Score**: Displays the number of cherries or gems collected.  
-  - **Lives**: Shown as heart icons to indicate how many lives remain.  
+  - **Lives**: Shown as heart icons to indicate how many lives remain.
+  - Clean and pixelated font style to match the retro theme.  
 
-- **Additional Features**:  
-  - Subtle UI transitions (e.g., fading in/out or bouncing icons) for added polish.  
-  - Clean and pixelated font style that matches the retro theme.  
+The simple UI lets players quickly glance at facts without being distracting.
 
-The simplicity of the interface ensures that players can quickly glance at their stats without breaking the pace of the game.  
 
 
 ## World / Level Design
@@ -186,23 +183,24 @@ The game is structured as a fast-paced, endless runner-style experience:
   - Features three static, handcrafted levels with increasing difficulty.  
 - **Release Version**:  
   - Levels will be procedurally generated, making each run unique and endless.
+  - Seeds will determine the procedural generation for debugging/testing purposes.
 
 
 ### Pacing and Difficulty
 - The game starts off simple, with fewer enemies and straightforward paths.  
 - As the player progresses, levels introduce:  
   - More enemies with varied behaviors.  
-  - Faster movement requirements and tighter jumps.  
-  - More complex paths requiring quick reflexes.  
+  - Faster movement requirements and tighter jumps. 
+  - More complex paths requiring more movement actions/changes.
 
 This gradual increase in difficulty ensures a rewarding challenge for players of all skill levels.
 
-
 ### Environmental Interaction
-The environment is primarily interactive through enemies and collectible items:  
+The environment is primarily interactive through enemies and collectible items:
 - **Enemies**: Players can choose to avoid or stomp on enemies for points.  
 - **Collectibles**:  
-  - **Cherries/Gems**: Increase the player's score.  
+  - **Cherries**: Increase the player's score & are easy to obtain relative to gems.
+  - **Gems**: MULTIPLY the player's score at the end of each level. (e.g. cherries x gems => score )
   - **Power-ups (Release Version)**:  
     - *Extra Time*: Extends the player’s time to complete sections.  
     - *Invincibility*: Temporarily protects Frank from enemies.  
@@ -211,33 +209,35 @@ In the prototype, only cherries/gems are available as interactables.
 
 
 ### Exploration and Secrets
-Since *Jungle Smash* is designed as a runner, there is minimal exploration or hidden content. The focus is on maintaining momentum and navigating the jungle’s linear paths.  
+Since *Jungle Smash* is designed as a runner, there is minimal exploration and minimal hidden content. 
+The focus is on maintaining momentum and navigating the jungle’s linear paths.  
 
 ## Technical Specifications
 
 ### Game Engine
-- The game is built using the **Godot Engine**, taking advantage of its powerful 2D physics, lightweight performance, and versatile scripting capabilities.
+The game is built using the **Godot Engine**, taking advantage of its open source & lightweight capability
 
 ### Platform Support
 - **Prototype Version**:  
   - Desktop (PC/Mac/Linux) via executable files.  
-  - Web-based deployment using HTML5 for browser play.  
 - **Release Version**:  
-  - Same platforms as the prototype, with potential optimization for additional web browsers and lightweight devices.  
+  - Same platforms as the prototype, with potential optimization 
+  - Web-based deployment using HTML5 for browser play.
 - **Console Support**: Not planned due to hardware limitations and scope.
+- **Mobile Support**: not planned due to touch control limitations.
 
 
 ### Performance Targets
 The game is designed to be lightweight and run on a wide range of hardware, ensuring accessibility:  
 - **Minimum Requirements**:  
-  - Processor: Intel Celeron or equivalent (e.g., Raspberry Pi supported).  
-  - Memory: 1-2GB RAM.  
-  - Graphics: Integrated graphics (Intel HD or better).  
-  - Storage: Less than 50MB of available disk space.  
+  - Processor: Any x86 processor like the Intel Celeron raspberry pi.  
+  - Memory: 1GB RAM.
+  - Graphics: Any integrated graphics or better.
+  - Storage: Less than 100MB of available disk space.  
 - **Recommended Requirements**:  
   - Processor: Dual-core processor.  
   - Memory: 2GB RAM or higher.  
-  - Graphics: Any modern GPU, such as Nvidia GTX 600 series or newer.  
+  - Graphics: Any modern GPU or post-2010 processor with integrated graphics.
 
 The game is optimized for smooth performance even on older hardware, ensuring stable frame rates and low input latency.
 
@@ -246,7 +246,7 @@ The game is optimized for smooth performance even on older hardware, ensuring st
 - The game uses **Godot’s built-in 2D physics engine**, leveraging the `move_and_slide()` function for character and enemy movement.  
 - Physics interactions include:  
   - Collision detection for terrain, obstacles, and enemies.  
-  - Stomping mechanics, where Frank can bounce off enemies’ heads.  
+  - Stomping mechanics, where Frank can bounce off enemies’ heads. 
   - Gravity and double-jump mechanics, ensuring a smooth and responsive player experience.  
 
-Godot’s physics system ensures consistent and predictable gameplay, essential for fast-paced endless runner mechanics.  
+Godot’s physics system ensures predictable gameplay and works well for fast-paced 2D platformer/runner mechanics.  

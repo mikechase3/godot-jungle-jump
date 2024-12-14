@@ -21,7 +21,7 @@ func _ready() -> void:
 	# Functions are defined below to store refs to the object
 	# So we can call builtin's like hide() and reset() and more.
 	# get_items().hide()
-	get_items()
+	get_items().hide()
 	get_danger().hide()
 	get_world()
 	get_player().reset(get_spawn_point().position)  # Set player pos to overriden.

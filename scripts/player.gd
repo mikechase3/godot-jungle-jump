@@ -17,6 +17,28 @@ signal died
 enum State {IDLE, RUN, JUMP, HURT, DEAD}  # A NAMED state, requires State.IDLE to call.
 var state: int = State.IDLE
 
+
+func _physics_process(delta: float) -> void:
+	velocity.y += gravity * delta  # Applies gravity
+	get_input()
+	move_and_slide()  # takes velocity as an input tho its not passed in.
+		
+	# Detect when a jump ends (move_and_slide() updates is_on_floor())
+	if state == State.JUMP and is_on_floor():
+		change_state(State.IDLE)
+		
+	if state == State.HURT:
+		return   # A timer starts in change_state for hurt.
+	
+	# get_slide_collision_count() returns the number of times the body
+	# collided and changed direction during the last call to move and slide ().
+	for i in range(get_slide_collision_count()):
+		var collision: KinematicCollision2D = get_slide_collision(i)
+		var collider: Object = collision.get_collider()
+		if collider.is_in_group("danger"):
+			hurt()  # self.hurt
+				
+		
 func _ready() -> void:
 	change_state(State.IDLE)
 
@@ -50,7 +72,7 @@ func get_input() -> void:
 	* Manages transitions of state machine, calling change_state
 	'''
 	
-	if state == State.HURT:  # Player can't do crap if in hurt state
+	if state == State.HURT:
 		return
 	
 	var right: bool = Input.is_action_pressed("right")
@@ -93,14 +115,7 @@ func hurt() -> void:
 		change_state(State.HURT)
 
 
-func _physics_process(delta: float) -> void:
-	velocity.y += gravity * delta
-	get_input()
-	move_and_slide()
-		
-	# Detect when a jump ends (move_and_slide() updates is_on_floor())
-	if state == State.JUMP and is_on_floor():
-		change_state(State.IDLE)
+
 	
 	
 func reset(_position: Vector2) -> void: 
